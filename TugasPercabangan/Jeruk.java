@@ -12,6 +12,8 @@ public class Jeruk {
             totalHarga = 5000;
         } else if (jumlah == 5) {
             totalHarga = 10000;
+        } else if (jumlah % 5 == 0){
+            totalHarga = jumlah * 10000 / 5;
         } else if (jumlah > 5) {
             totalHarga = (jumlah / 5) * 10000 + (jumlah % 5) * 3000 - 1000;
         } else {
